@@ -7,6 +7,7 @@ var source = require('vinyl-source-stream');
 var stylus = require('gulp-stylus');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var deploy = require('gulp-gh-pages');
 
 var PATH = {
   src: './src',
@@ -53,6 +54,11 @@ gulp.task('connect', function() {
 
 gulp.task('watch', function () {
   gulp.watch(PATH.srcFiles, ['build']);
+});
+
+gulp.task('deploy', function () {
+  gulp.src(PATH.dist + '/**/*')
+    .pipe(deploy({}));
 });
 
 gulp.task('server', ['build','connect','watch']);
