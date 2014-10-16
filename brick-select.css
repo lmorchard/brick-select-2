@@ -61,8 +61,8 @@
 .brick-select-proxy-root button.handle {
   position: relative;
   background: transparent;
-  color: $color-alpha;
-  font-family: $fontFamilyPrimary;
+  color: #333;
+  font-family: "Fira Sans", "Fira Sans", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 17px;
   width: 100%;
   height: 50px;
@@ -89,11 +89,11 @@
   height: 0px;
   bottom: 5px;
   right: 5px;
-  border-bottom: 10px solid $highlight-color;
+  border-bottom: 10px solid #000;
   border-left: 10px solid transparent;
 }
 .brick-select-proxy-root .dialogue {
-  font-family: $fontFamilyPrimary;
+  font-family: "Fira Sans", "Fira Sans", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 17px;
   background: rgba(199,199,199,0.85);
   font-style: italic;
@@ -115,10 +115,10 @@
   border: 0;
   padding: 0;
   margin: auto;
-  background: $color-iota;
+  background: #f4f4f4;
 }
 .brick-select-proxy-root .dialogue .panel header {
-  padding: $dim-small;
+  padding: 14px;
 }
 .brick-select-proxy-root .dialogue .panel header h1 {
   text-align: center;
@@ -126,7 +126,7 @@
   font-weight: lighter;
   font-style: italic;
   line-height: 26px;
-  color: $color-gamma;
+  color: #4d4d4d;
   margin: 6px 0 24px 0;
   padding: 0;
 }
@@ -148,7 +148,7 @@
   margin: 0;
   border: 0;
   padding: 0rem 25px;
-  background: $color-beta;
+  background: #fff;
   color: #00caf2;
   transition: all 0.2;
   transition-delay: 200ms;
@@ -157,10 +157,10 @@
 .brick-select-proxy-root .dialogue .panel footer button:after {
   content: " ";
   position: absolute;
-  --dim-micro: $dim-micro;
+  --dim-micro: 6px;
   height: calc(100% - var(--dim-micro) * 2);
   width: 1px;
-  top: $dim-micro;
+  top: 6px;
   right: 0px;
   background: #e7e7e7;
   z-index: 1;
@@ -184,8 +184,8 @@
   width: 100%;
 }
 .brick-select-proxy-root .dialogue .panel .menu .menu-item {
-  padding: $dim-small;
-  color: $color-gamma;
+  padding: 14px;
+  color: #4d4d4d;
   box-sizing: border-box;
   list-style: none;
   position: relative;
@@ -219,13 +219,13 @@
   content: " ";
   position: absolute;
   bottom: 0px;
-  left: $dim-small;
-  --dim-small: $dim-small;
+  left: 14px;
+  --dim-small: 14px;
   width: calc(100% - var(--dim-small) * 2);
   height: 1px;
   margin-left: auto;
   margin-right: auto;
-  background: $color-theta;
+  background: #e7e7e7;
 }
 .brick-select-proxy-root .dialogue .panel .menu .menu-item:after:last-child {
   display: none;
@@ -236,7 +236,7 @@
   opacity: 0;
   border-radius: 50%;
   transform-origin: center center;
-  background: $color-theta;
+  background: #e7e7e7;
   transform: scaleX(1);
   z-index: -1;
 }
