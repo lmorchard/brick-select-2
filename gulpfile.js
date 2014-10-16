@@ -22,7 +22,7 @@ var PATH = {
 gulp.task('build', ['browserify', 'stylus', 'compress']);
 
 gulp.task('browserify', function () {
-  browserify({debug: true})
+  browserify({debug: false})
     //.add(path.join(PATH.src, PATH.main))
     .add(PATH.src + '/' + PATH.main)
     .bundle()
